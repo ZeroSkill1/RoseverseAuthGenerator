@@ -1,0 +1,9 @@
+.cache/*
+.vscode/*
+build/*
+compile_commands.json
+*.elf
+*.3dsx
+*.smdh
+.clangd
+build_release.sh
