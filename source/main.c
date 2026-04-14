@@ -205,7 +205,7 @@ Result genOrLoadToken(bool *out_ok, bool *had_password) {
 	//printf("debug: tokenb64=\n%s\n", b64token);
 	
 	FILE *output = fopen(OLIVE_TOKEN_PATH, "wb");
-	*out_ok = fputs(token, output) >= 0;
+	*out_ok = fputs(b64token, output) >= 0;
 	fclose(output);
 	if (!*out_ok) {
 		fprintf(stderr, "Could not write token file to SD card.\n");
